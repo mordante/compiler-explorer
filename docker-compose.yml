@@ -9,6 +9,8 @@ services:
     container_name: compiler-explorer
     ports:
       - 10240:10240
+    volumes:
+      - ./libcxx:/libcxx
     networks:
       - compiler-explorer
     restart: on-failure

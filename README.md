@@ -8,6 +8,12 @@ This version is intended to be used to test the latest C++ Standard, therefore
 the image only contains modern versions of GCC and Clang. The compilers default
 to their latest supported C++ Standard. The Clang compiler uses libc++ by default.
 
+## Setup
+
+The Docker image expects a link to a local libc++ build or installation. Therefore create a symlink like
+
+`ln -s <path/to/libcxx> libcxx`
+
 ## Requirements
 
 * Docker
